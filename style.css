@@ -1,0 +1,219 @@
+:root {
+  --color-background-start: #c4d4fe;
+  --color-background-end: #fff;
+  --color-ellipse1: #4270f0;
+  --color-ellipse2: #698ff7;
+  --color-ellipse3: #94aef6;
+  --color-ellipse4: #7a9bf5;
+  --color-ellipse5: #6789e7;
+  --color-ellipse6: #b2c6fd;
+  --color-ellipse7: #4067d2;
+  --color-ellipse8: #ffd95a;
+  --color-ellipse9: #ffd341;
+  --color-ellipse10: #ffc918;
+  --color-ellipse11: #ffd54b;
+  --color-text: #e4af00;
+}
+
+div:before,
+div:after {
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  background: radial-gradient(
+    var(--color-background-start),
+    var(--color-background-end)
+  );
+}
+
+div.collect {
+  width: 100vmin;
+  height: 100vmin;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  background: radial-gradient(
+        ellipse,
+        var(--color-ellipse1) 8.5vmin,
+        transparent 8vmin
+      )
+      41.5vmin 37vmin / 17vmin 1.5vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse2) 8.5vmin, transparent 8vmin)
+      41.5vmin 36.5vmin / 17vmin 2vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse1) 1.5vmin, transparent 1vmin)
+      34.5vmin 49.5vmin / 3vmin 3vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse2) 2.5vmin, transparent 1vmin)
+      33vmin 48vmin / 5vmin 5vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse3) 20vmin, transparent 1vmin)
+      27vmin 35vmin / 40vmin 34vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse4) 23vmin, transparent 1vmin)
+      25.5vmin 35vmin / 46vmin 39vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse5) 25vmin, transparent 1vmin)
+      25vmin 35vmin / 50vmin 45vmin no-repeat,
+    linear-gradient(90deg, var(--color-ellipse3) 13vmin, transparent 1vmin)
+      21.5vmin 52.5vmin / 8vmin 3vmin no-repeat,
+    radial-gradient(
+        ellipse at bottom right,
+        var(--color-ellipse3) 7vmin,
+        transparent 1vmin
+      )
+      14.5vmin 45vmin / 14vmin 8vmin no-repeat,
+    radial-gradient(
+        ellipse at top right,
+        var(--color-ellipse3) 7vmin,
+        transparent 1vmin
+      )
+      14.5vmin 55vmin / 14vmin 8vmin no-repeat,
+    linear-gradient(90deg, var(--color-ellipse4) 13vmin, transparent 1vmin)
+      20.5vmin 52.5vmin / 8vmin 6vmin no-repeat,
+    radial-gradient(
+        ellipse at bottom right,
+        var(--color-ellipse4) 7vmin,
+        transparent 1vmin
+      )
+      13.5vmin 45vmin / 14vmin 8vmin no-repeat,
+    radial-gradient(
+        ellipse at top right,
+        var(--color-ellipse4) 7vmin,
+        transparent 1vmin
+      )
+      13.5vmin 58vmin / 14vmin 8vmin no-repeat,
+    radial-gradient(
+        ellipse at top,
+        var(--color-ellipse4) 4.5vmin,
+        transparent 1vmin
+      )
+      32vmin 67vmin / 9vmin 15vmin no-repeat,
+    radial-gradient(
+        ellipse at top,
+        var(--color-ellipse5) 5vmin,
+        transparent 1vmin
+      )
+      32.5vmin 72vmin / 10vmin 10vmin no-repeat,
+    radial-gradient(
+        ellipse at top,
+        var(--color-ellipse4) 4.5vmin,
+        transparent 1vmin
+      )
+      60vmin 67vmin / 9vmin 15vmin no-repeat,
+    radial-gradient(
+        ellipse at top,
+        var(--color-ellipse5) 5vmin,
+        transparent 1vmin
+      )
+      58.5vmin 72vmin / 10vmin 10vmin no-repeat;
+}
+
+div.collect:before {
+  width: 100vmin;
+  height: 100vmin;
+  left: 30vmin;
+  z-index: 9999;
+  transform: rotate(45deg);
+  background: radial-gradient(
+        ellipse at bottom right,
+        transparent 6vmin,
+        var(--color-ellipse5) 6vmin,
+        var(--color-ellipse5) 7.5vmin,
+        transparent 7.5vmin
+      )
+      43vmin 50vmin / 14vmin 8vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse6) 1vmin, transparent 1vmin)
+      14vmin 69vmin / 2vmin 3vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse6) 2vmin, transparent 1vmin)
+      12vmin 73vmin / 4vmin 7vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse7) 1vmin, transparent 1vmin)
+      53.5vmin 67vmin / 2vmin 3vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse7) 2vmin, transparent 1vmin)
+      53vmin 71vmin / 4vmin 7vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse3) 13vmin, transparent 1vmin)
+      18vmin 58vmin / 26vmin 26vmin no-repeat,
+    linear-gradient(-45deg, var(--color-ellipse3) 13vmin, transparent 1vmin)
+      14.5vmin 57vmin / 15vmin 15vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse3) 2vmin, transparent 1vmin)
+      12vmin 69vmin / 4vmin 8vmin no-repeat,
+    radial-gradient(
+        ellipse at right,
+        var(--color-ellipse3) 8vmin,
+        transparent 1vmin
+      ) -4vmin 69.5vmin / 16vmin 9vmin no-repeat,
+    radial-gradient(
+        ellipse at bottom right,
+        var(--color-ellipse5) 8vmin,
+        transparent 1vmin
+      ) -4vmin 66vmin / 16vmin 8vmin no-repeat,
+    radial-gradient(ellipse, var(--color-ellipse3) 2vmin, transparent 1vmin)
+      9.25vmin 74vmin / 4vmin 8vmin no-repeat,
+    radial-gradient(
+        ellipse at right,
+        var(--color-ellipse4) 7vmin,
+        transparent 1vmin
+      ) -3vmin 73vmin / 14vmin 8vmin no-repeat,
+    radial-gradient(
+        ellipse at bottom right,
+        var(--color-ellipse7) 8vmin,
+        transparent 1vmin
+      ) -4vmin 69vmin / 16vmin 8vmin no-repeat;
+}
+
+div.collect:after {
+  width: 15vmin;
+  height: 15vmin;
+  left: 42vmin;
+  top: 5vmin;
+  z-index: 999;
+  content: "$";
+  font-size: 9vmin;
+  padding-right: 1vmin;
+  padding-bottom: 1vmin;
+  font-family: "Archivo Black", sans-serif;
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: coindown 7s infinite;
+  background: radial-gradient(
+        ellipse,
+        var(--color-ellipse8) 5vmin,
+        transparent 3.5vmin
+      )
+      3vmin 2vmin / 10vmin 7vmin no-repeat,
+    radial-gradient(
+        ellipse,
+        var(--color-ellipse9) 6vmin,
+        var(--color-ellipse10) 6vmin,
+        var(--color-ellipse10) 6.5vmin,
+        var(--color-ellipse11) 7vmin,
+        var(--color-ellipse11) 7.5vmin,
+        transparent 7.5vmin
+      )
+      0vmin 0vmin / 15vmin 15vmin no-repeat,
+    radial-gradient(
+        ellipse,
+        var(--color-ellipse10) 7.5vmin,
+        transparent 7.5vmin
+      )
+      0.25vmin 0vmin / 16vmin 16vmin no-repeat;
+}
+
+@keyframes coindown {
+  0% {
+    top: -10vmin;
+  }
+  70% {
+    top: 40vmin;
+  }
+  100% {
+    top: 40vmin;
+  }
+}
